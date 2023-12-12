@@ -10,3 +10,4 @@ Steps to run:
  5) .\venv\Scripts\activate
  6) pip install -r requirements.txt
  7) python manage.py runserver
+CLICK THE LINK
