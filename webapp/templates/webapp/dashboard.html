@@ -1,0 +1,86 @@
+{% extends 'webapp/base.html' %}
+
+{% block content %}
+
+    <hr>
+
+    <a class="btn btn-outline-primary btn-sm" href="{% url 'create-record' %}">
+
+        Create a New Contact &nbsp; <i class="fa fa-plus-circle" aria-hidden="true"></i>
+
+    </a>
+
+    <hr>
+
+    <style>
+
+        table.center {
+        margin-left: auto; 
+        margin-right: auto;
+        }
+
+        table.center th {
+            color: #141614;
+        }
+
+    </style>
+
+    <table class="table table-hover table-dark center table-striped table-bordered">
+        
+
+        <thead class="table-light">
+
+            <tr>
+
+                
+                <th scope="col"> Name </th>
+
+                <th scope="col"> Email </th>
+                <!-- <th scope="col"> Notes </th> -->
+                <th scope="col"> Created Time </th>
+
+
+                <!-- <th scope="col"> Updated Time </th> -->
+                <th scope="col"> View </th>
+                
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        {% if records %}
+
+            {% for record in records %}
+
+            <tr> 
+
+                <td> {{record.Name}} </td>
+
+
+
+                <td> {{record.Email}} </td>
+
+                <!-- <td> {{record.Notes}} </td> -->
+
+
+
+                <td> {{record.creation_date}} </td>
+
+                <!-- <td> {{ record.update_date }} </td> -->
+
+                <td> <a class="btn btn-success btn-sm" href="{% url 'record' record.id %}"> <i class="fa fa-eye" aria-hidden="true"> </i> </a> </td>
+
+            </tr>
+
+            {% endfor %}
+
+        {% endif %}
+
+
+        </tbody>
+
+    </table>
+
+{% endblock %}
