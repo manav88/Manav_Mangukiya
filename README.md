@@ -9,5 +9,8 @@ Steps to run:
  4)  virtualenv venv   (for virtual enviornment)
  5)  .\venv\Scripts\activate
  6)  pip install -r requirements.txt
- 7)  python manage.py runserver
+    OR
+    pip install django
+    pip install django-crispy-forms==1.14.0
+ 8)  python manage.py runserver
 CLICK THE LINK
