@@ -1,0 +1,15 @@
+.form-layout{
+
+    border-radius: 14px;
+    width: 500px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.message-text{
+
+    color: white;
+}
