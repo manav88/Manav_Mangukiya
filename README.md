@@ -1,7 +1,7 @@
 #by MANAV BHADRESHBHAI MANGUKIYA 
 
 Steps to run:
- 1) git pull https://github.com/manav88/Manav_Mangukiya.git
+ 1) git clone https://github.com/manav88/Manav_Mangukiya.git
     
  NOW OPEN IN IDE and run below commands
  
